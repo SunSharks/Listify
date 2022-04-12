@@ -36,7 +36,7 @@ else:
                 f.writelines(new_lines)
         elif sys.argv[2] == "0":
             splitted_filename = sys.argv[1].split(".")
-            with open(splitted_filename[0] + "_listified" + splitted_filename[1], 'w') as f:
+            with open(splitted_filename[0] + "_listified." + splitted_filename[1], 'w') as f:
                 f.writelines(new_lines)
         else:
             print("usage: python listify.py <path> <opt: overwrite 1/0>")
